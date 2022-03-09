@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>#{name}---#{user_name}</title>
+      style
+        include style.css
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body class="body2">
+    <nav>
+      <div class="logo"><h3>Education Festival</h3></div>
+      <div class="links">
+        <!-- <a href="#Profile">Profile</a> -->
+        <a href="/">Home</a>
+      </div>
+    </nav>
+    <div class="scrollable about">
+      <div id="Profile">
+        <table border="3">
+          <tr>
+             <th>Information Key</th>
+             <th>Information Details</th>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td>#{name}</td>
+          </tr>
+          <tr>
+            <td>User Name</td>
+            <td>#{user_name}</td>
+          </tr>
+          <tr>
+            <td>E-mail</td>
+            <td>#{email}</td>
+          </tr>
+          <tr>
+            <td>Age</td>
+            <td>#{age}</td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td>#{address}</td>
+          </tr>
+        </table>
+        <!-- <span>Name: </span> <span>#{name}</span> -->
+      </div>
+      <hr>
+      <div id="exam">
+        <h1>Exam</h1>
+        <div class="no_exam">No exam available right now</div>
+        <div class="questions">
+          <form action="/answer" method="post" class="exam_form">
+            <input type="number" name="user_name" value="#{user_name}" class="hide">
+            <div class="question child-one">
+              <div class="q-num">1</div>
+              <p class="q-statement">Write a html h1 tag which will show hello world output ?</p>
+              <input name="q1" placeholder="Write your answer here" type="text" class="q-answer">
+            </div>
+            <div class="question">
+              <div class="q-num">2</div>
+              <p class="q-statement">What is the full form of html ?</p>
+              <input name="q2" placeholder="Write your answer here" type="text" class="q-answer">
+            </div>
+            <div class="question">
+              <div class="q-num">3</div>
+              <p class="q-statement">What is the full form of css ?</p>
+              <input name="q3" placeholder="Write your answer here" type="text" class="q-answer">
+            </div> 
+            <div class="question">
+              <div class="q-num">4</div>
+              <p class="q-statement">Is Javascript a case-sensetive language ? Write True / False.</p>
+              <input name="q4" placeholder="Write your answer here" type="text" class="q-answer">
+            </div>
+            <div class="question">
+              <div class="q-num">5</div>
+              <p class="q-statement">Write html codes to link a css file called "style.css".</p>
+              <input name="q5" placeholder="Write your answer here" type="text" class="q-answer">
+            </div>
+            <div class="question">
+              <div class="q-num">6</div>
+              <p class="q-statement">Write the correct JavaScript syntax to set the innerHTML to "I am a web developer" of a html element with id "para"?</p>
+              <input name="q6" placeholder="Write your answer here" type="text" class="q-answer">
+            </div>
+            <div class="question">
+              <div class="q-num">7</div>
+              <p class="q-statement">Write the correct JavaScript code to write "Hello World" in an alert box?</p>
+              <input name="q7" placeholder="Write your answer here" type="text" class="q-answer">
+            </div>
+            <div class="question">
+              <div class="q-num">8</div>
+              <p class="q-statement">Write the correct JavaScript code to call a function with name sum.</p>
+              <input  name="q8"placeholder="Write your answer here" type="text" class="q-answer">
+            </div>
+            <div class="question">
+              <div class="q-num">9</div>
+              <p class="q-statement">Write the correct css code to write a comment which contain "this is a comment".</p>
+              <input name="q9" placeholder="Write your answer here" type="text" class="q-answer">
+            </div>
+            <div class="question">
+              <div class="q-num">10</div>
+              <p class="q-statement">Which CSS property controls the text size of a html element?</p>
+              <input name="q10" placeholder="Write your answer here" type="text" class="q-answer">
+            </div>
+            <button type="submit" class="submit">Submit Paper</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  script
+      include script.js
+</html>

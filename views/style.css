@@ -1,0 +1,261 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 20px 20px;
+	background: black;
+	position: sticky;
+	top: 0px;
+}
+
+.links{
+	margin-right: 50px;
+}
+
+nav .logo{
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+
+nav a{
+	color: white;
+    padding: 0px 26px;
+    margin: 0 5px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav a:hover{
+	color: #e94343;
+}
+
+.about{
+	background: #f3f3f3;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1{
+	font-family: 'Poppins', sans-serif;
+}
+
+.about p{
+	width: 70%;
+    font-size: 18px;
+    margin-top: 11px;
+    line-height: 29px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.reg-form{
+	display: flex;
+	flex-direction: column;
+	background: white;
+	padding: 20px 30px;
+	border-radius: 4px;
+	box-shadow: 0px 1px 20px 3px #818181;
+}
+
+.form-control{
+	margin-top: 10px;
+	padding: 5px 10px;
+	font-family: 'Poppins', sans-serif;
+	width: 400px;
+	border-radius: 3px;
+	border: 1px solid #999;
+	resize: none;
+}
+
+.reg-form button{
+	width: 424px;
+    margin-top: 29px;
+    background: #76f376;
+    cursor: pointer;
+}
+
+.reg-form button:active{
+	background: #3cad3c;
+}
+
+.reg-form h1{
+	text-align: center;
+}
+
+.last-child{
+	margin-top: 19px;
+}
+
+.about #Profile{
+	height: 40%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding:60px 0;
+}
+
+.about #exam{
+	height:60%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 2px dotted;
+	flex-direction: column;
+}
+
+.about #exam h1{
+	margin-top: 30px;
+}
+
+.scrollable{
+	overflow: scroll;
+	height: 189vh;
+	width:100%;
+}
+
+.body2{
+	overflow-y: auto;
+}
+
+table tr th{
+	padding: 4px 30px;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+
+}
+
+table tr td{
+	padding: 4px 30px;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+
+.no_exam{
+	background: #a0d5a0;
+    padding: 27px 267px;
+    border-radius: 4px;
+    box-shadow: -2px 1px 20px 5px #cdc2c2;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+    position:absolute;
+    top: 850px;
+}
+
+.questions{
+	display: flex;
+    position: absolute;
+    top: 750px;
+    width: 56%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    width: 0;
+}
+
+.hide{
+	opacity: 0;
+	height: 0;
+	width: 0;
+	color: white;
+	border: none;
+}
+
+.dis-none{
+	display: none;
+}
+
+.question{
+	width: 70%;
+	margin-top: 50px;
+}
+
+.child-one{
+	margin-top: 1950px;
+}
+.questions form{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    padding: 40px 0;
+    margin-bottom: 30px;
+    overflow-y: auto;
+    height: 300px;
+    box-shadow: 1px 0px 20px 4px #8a9195;
+}
+
+.question p{
+	margin-top: 23px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.q-num{
+	width: 40px;
+    height: 20px;
+    background: #76f376;
+    margin: 0 182px;
+    text-align: center;
+    padding: 12px 3px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.q-answer{
+	padding: 7px 10px;
+	border: 1px solid #999;
+	border-radius: 4px;
+	width: 60%;
+	font-family: 'Poppins', sans-serif;
+}
+
+.submit{
+	font-family: 'Poppins', sans-serif;
+    margin-top: 45px;
+    padding: 9px 210px;
+    background: #93ff93;
+    cursor: pointer;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.hundred-per{
+	height: 100vh;
+}
+
+.font-pop{
+	font-family: 'Poppins', sans-serif;
+}
+
+.error-btn{
+	margin-top: 30px;
+	margin-left: -25px;
+}
+
+.error-btn button{
+	padding: 6px 15px;
+	font-family: 'Poppins', sans-serif;
+	background: #93ff93;
+	border: 2px solid #93ff93;
+	border-radius: 4px;
+	margin-left:30px;
+	cursor: pointer;
+}
